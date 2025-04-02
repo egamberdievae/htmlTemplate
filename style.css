@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+} */
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3E3E3E;
+    color: white;
+    height: 200px;
+    padding: 20px 30px;
+    font-family: "DM Sans", sans-serif;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    
+}
+
+header nav .logo{
+    font-size: 30px;
+    font-weight: normal;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 3px 5px;
+    /* transition: all .3s linear; */
+}
+
+header nav ul li a:hover{
+    cursor: pointer;
+    background-color: #9ed71b;
+    border-radius: 6px;
+    color: #3E3E3E;
+}
+
+header img{
+    position: absolute;
+    top: 100px;
+}
+
+.content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-top: 120px;
+    border-bottom: 1px solid #bababa;
+    padding-bottom: 25px;
+    padding-left: 430px;
+}
+
+.content .content-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    padding-right: 25px;
+    border-right: 1px solid #bababa;
+}
+
+.content .content-left span{
+    color: #9ed71b;
+}
+
+.categories-box {
+    width: 250px;
+    background: #fff;
+    border: 2px solid #ccc;
+    padding: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 350px;
+    right: 400px;
+}
+
+.categories-title {
+    background: #333;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+}
+
+.categories-list {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.categories-list li {
+    padding: 8px 0;
+    border-bottom: 1px dotted #ccc;
+    position: relative;
+}
+
+.categories-list li a {
+    text-decoration: none;
+    color: #3E3E3E;
+    font-size: 16px;
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.categories-list li a:hover{
+    cursor: pointer;
+}
+
+.categories-list li::before {
+    content: "▶";
+    color: red;
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+}
+
+.sections{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 10px;
+}
+
+.sections .section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 22px;
+    border-radius: 10px;
+}
+
+.sections .section a{
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sections .section a:hover{
+    text-decoration: underline;
+}
+
+.sections .gray-box{
+    border: 1px solid black;
+    background: linear-gradient(white, gray);
+}
+.sections .blue-box{
+    border: 1px solid blue;
+    background: linear-gradient(white, rgb(129, 210, 245));
+}
+
+.sections .blue-box h3{
+    color: rgb(6, 6, 126);
+}
+
+.sections .green-box{
+    border: 1px solid green;
+    background: linear-gradient(white, rgb(131, 230, 60));
+}
+
+.sections .green-box h3{
+    color: rgb(9, 113, 9);
+}
+
+.sections .yellow-box{
+    border: 1px solid rgb(255, 221, 0);
+    background: linear-gradient(white, rgba(237, 237, 33, 0.94));
+}
+
+.footer{
+    background-color: #3B3B3B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("http://www.htmltemplates.net/preview/template_10/images/footer-img.jpg");
+    /* width: 100%; */
+    background-repeat: no-repeat;
+    background-position-x: 20%;
+    color: white;
+    padding: 20px 380px;
+}
+
+.footer .footer-left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer .footer-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    color: #696969;
+}
+
+.footer .footer-right ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer .footer-right ul li{
+    list-style: none;
+}
+
+.footer .footer-right ul li a{
+    color: #bababa;
+
+    text-decoration: none;
+}
+
+.footer .footer-right a{
+    text-decoration: none;
+    color: #bababa;
+}
